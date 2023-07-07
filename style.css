@@ -171,4 +171,16 @@ footer{
         width: 25px;
         margin: 0 2px;
     }
+    .songList > h1{
+        text-align: center;
+    }
+    .songItemContainer{
+        margin-left: 0px;
+    }
+    .songItem{
+        font-size: 12px;
+    }
+    section{
+        width: 85%;
+    }
 }
