@@ -102,7 +102,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
 })
 
 document.getElementById('next').addEventListener('click', () => {
-    if (songIndex >= 5) {
+    if (songIndex >= (songs.length-1)) {
         songIndex = 0
     }
     else {
@@ -121,7 +121,7 @@ document.getElementById('next').addEventListener('click', () => {
 
 document.getElementById('previous').addEventListener('click', () => {
     if (songIndex <= 0) {
-        songIndex = 5
+        songIndex = (songs.length-1)
     }
     else {
         songIndex -= 1
