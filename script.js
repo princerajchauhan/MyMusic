@@ -14,7 +14,8 @@ let songs = [
     { songName: "Apna Bana Le Bhediya", songPath: "songs/Apna Bana Le Bhediya.mp3", coverPath: "cover/apna bana le cover.jpg" },
     { songName: "Kali Kali Zulfon", songPath: "songs/Kali Kali Zulfon.mp3", coverPath: "cover/kali kali.jpg" },
     { songName: "Shiv Tandav Stotram", songPath: "songs/Shiv Tandav Stotram.mp3", coverPath: "cover/shiv tandav.jpg" },
-    { songName: "Shri Krishna Govind", songPath: "songs/Shri Krishna Govind Hare Murari.mp3", coverPath: "cover/Shri-Krishna.jpg" }
+    { songName: "Shri Krishna Govind", songPath: "songs/Shri Krishna Govind Hare Murari.mp3", coverPath: "cover/Shri-Krishna.jpg" },
+    { songName: "Kahani Suno", songPath: "songs/Kahani Suno.mp3", coverPath: "cover/kahani suno.jpg" }
 ]
 
 // audioElement.play()
@@ -101,7 +102,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
 })
 
 document.getElementById('next').addEventListener('click', () => {
-    if (songIndex >= 4) {
+    if (songIndex >= 5) {
         songIndex = 0
     }
     else {
@@ -120,7 +121,7 @@ document.getElementById('next').addEventListener('click', () => {
 
 document.getElementById('previous').addEventListener('click', () => {
     if (songIndex <= 0) {
-        songIndex = 4
+        songIndex = 5
     }
     else {
         songIndex -= 1
